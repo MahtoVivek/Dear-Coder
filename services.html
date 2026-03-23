@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Services - Dear Coder. Web Development, App Development, Web Design, AI Integration, SEO Optimization, and Maintenance Support.">
+    <meta name="keywords" content="services, web development, app development, web design, AI integration, SEO">
+    <meta name="author" content="Dear Coder">
+    <title>Services - Dear Coder | Web Development & Digital Solutions</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Image/favicon.png">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p>Loading Dear Coder...</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-code"></i> <a href="index.html" style="color: inherit; text-decoration: none;">Dear Coder</a>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <section style="padding: 80px 0; background: var(--background); text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; margin-bottom: 20px; color: var(--text-primary);">Our Services</h1>
+            <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 0;">Comprehensive digital solutions tailored for your business needs</p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section style="padding: 80px 0; background: var(--background);">
+        <div class="container">
+            <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                
+                <!-- Web Development -->
+                <div class="service-card" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1)); border: 1px solid var(--border-color); padding: 40px; border-radius: 15px; text-align: center; transition: var(--transition); cursor: pointer;">
+                    <div style="font-size: 3.5rem; color: var(--primary-color); margin-bottom: 20px;">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: var(--text-primary);">Web Development</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">
+                        Custom-built websites with modern technologies, fast performance, and full responsiveness.
+                    </p>
+                    <a href="service-web-development.html" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95rem;">Learn More</a>
+                </div>
+
+                <!-- Web Design -->
+                <div class="service-card" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(245, 158, 11, 0.1)); border: 1px solid var(--border-color); padding: 40px; border-radius: 15px; text-align: center; transition: var(--transition); cursor: pointer;">
+                    <div style="font-size: 3.5rem; color: var(--secondary-color); margin-bottom: 20px;">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: var(--text-primary);">Web Design</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">
+                        Beautiful, user-friendly designs that reflect your brand and convert visitors into customers.
+                    </p>
+                    <a href="service-web-design.html" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95rem;">Learn More</a>
+                </div>
+
+                <!-- App Development -->
+                <div class="service-card" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(16, 185, 129, 0.1)); border: 1px solid var(--border-color); padding: 40px; border-radius: 15px; text-align: center; transition: var(--transition); cursor: pointer;">
+                    <div style="font-size: 3.5rem; color: var(--accent-color); margin-bottom: 20px;">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: var(--text-primary);">App Development</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">
+                        Responsive mobile apps and progressive web apps built with the latest technologies.
+                    </p>
+                    <a href="service-app-development.html" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95rem;">Learn More</a>
+                </div>
+
+                <!-- AI Integration -->
+                <div class="service-card" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(99, 102, 241, 0.1)); border: 1px solid var(--border-color); padding: 40px; border-radius: 15px; text-align: center; transition: var(--transition); cursor: pointer;">
+                    <div style="font-size: 3.5rem; color: var(--success-color); margin-bottom: 20px;">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: var(--text-primary);">AI Integration</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">
+                        Integrate AI chatbots, recommendations, and automation to enhance your digital presence.
+                    </p>
+                    <a href="service-ai-integration.html" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95rem;">Learn More</a>
+                </div>
+
+                <!-- SEO Optimization -->
+                <div class="service-card" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(236, 72, 153, 0.1)); border: 1px solid var(--border-color); padding: 40px; border-radius: 15px; text-align: center; transition: var(--transition); cursor: pointer;">
+                    <div style="font-size: 3.5rem; color: var(--primary-color); margin-bottom: 20px;">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: var(--text-primary);">SEO Optimization</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">
+                        Boost your online visibility with comprehensive SEO strategies and best practices.
+                    </p>
+                    <a href="service-seo-optimization.html" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95rem;">Learn More</a>
+                </div>
+
+                <!-- Maintenance & Support -->
+                <div class="service-card" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(245, 158, 11, 0.1)); border: 1px solid var(--border-color); padding: 40px; border-radius: 15px; text-align: center; transition: var(--transition); cursor: pointer;">
+                    <div style="font-size: 3.5rem; color: var(--secondary-color); margin-bottom: 20px;">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 style="font-size: 1.8rem; margin-bottom: 15px; color: var(--text-primary);">Maintenance & Support</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 25px; line-height: 1.6;">
+                        Ongoing support, updates, and maintenance to keep your website running smoothly.
+                    </p>
+                    <a href="service-maintenance-support.html" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95rem;">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Services -->
+    <section style="padding: 80px 0; background: var(--surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 15px; color: var(--text-primary);">Why Choose Our Services?</h2>
+                <p style="font-size: 1.1rem; color: var(--text-secondary);">We deliver excellence in every project</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--text-primary);">Affordable Pricing</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Quality services at prices that fit your budget</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 20px;">
+                        <i class="fas fa-zap"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--text-primary);">Fast Delivery</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Quick turnaround without compromising quality</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--accent-color); margin-bottom: 20px;">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--text-primary);">Expert Team</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Experienced professionals dedicated to your success</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--success-color); margin-bottom: 20px;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--text-primary);">24/7 Support</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Always here to help with dedicated support</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--primary-color); margin-bottom: 20px;">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--text-primary);">Quality Assurance</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Rigorous testing for bug-free solutions</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <div style="font-size: 2.5rem; color: var(--secondary-color); margin-bottom: 20px;">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 style="margin-bottom: 15px; color: var(--text-primary);">Results Driven</h3>
+                    <p style="color: var(--text-secondary); line-height: 1.6;">Focus on measurable business growth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 80px 0; background: var(--background); text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: var(--text-primary);">Ready to Get Started?</h2>
+            <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 40px;">Let's discuss your project and bring your ideas to life</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="index.html#contact" class="btn btn-primary" style="padding: 15px 40px; font-size: 1rem;">Get in Touch</a>
+                <a href="index.html#pricing" class="btn btn-secondary" style="padding: 15px 40px; font-size: 1rem;">View Pricing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dear Coder</h4>
+                    <p>Affordable digital solutions for your business. Fast, professional, reliable.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="service-web-development.html">Web Development</a></li>
+                        <li><a href="service-web-design.html">Web Design</a></li>
+                        <li><a href="service-app-development.html">App Development</a></li>
+                        <li><a href="service-ai-integration.html">AI Integration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/MahtoVivek" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://facebook.com/dearcoder" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/dearcoder" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/company/dearcoder" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/dearcoder" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dear Coder. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>

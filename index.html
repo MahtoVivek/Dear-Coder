@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dear Coder - Affordable Digital Solutions for Your Business. Web development, app development, AI integration starting at ₹1599">
+    <meta name="keywords" content="web development, web design, app development, affordable websites, digital solutions">
+    <meta name="author" content="Dear Coder">
+    <title>Dear Coder - Affordable Digital Solutions | Web Development & App Services</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Image/favicon.png">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+        <p>Loading Dear Coder...</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-code"></i> Dear Coder
+                </div>
+                
+                <!-- Hamburger Menu -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <!-- Menu Items -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#domain">Domain & Hosting</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">🔥 Special Offer for Limited Time!</div>
+                <h1 class="hero-title">Affordable Digital Solutions for Your Business 🚀</h1>
+                <p class="hero-subtitle">We build websites, apps, and AI-powered solutions that grow your business.</p>
+                
+                <!-- Highlight Badge -->
+                <div class="offer-badge">
+                    <span class="badge-text">Landing Page Website Only ₹1399 + Domain</span>
+                    <div class="badge-details">
+                        <p>Domain starts from ₹499–₹999/year</p>
+                        <p><strong>Affordable and Professional Website Solutions</strong></p>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <a href="#pricing" class="btn btn-primary">Get Started</a>
+                    <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+                </div>
+                
+                <!-- Hero Features -->
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-zap"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Mobile Friendly</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-search"></i>
+                        <span>SEO Optimized</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Down Indicator
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive digital solutions tailored for your business needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Web Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Custom-built websites with modern technologies, fast performance, and full responsiveness.</p>
+                </div>
+                
+                <!-- Web Design -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful, user-friendly designs that reflect your brand and convert visitors into customers.</p>
+                </div>
+                
+                <!-- App Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>App Development & Design</h3>
+                    <p>Responsive mobile apps and progressive web apps built with the latest technologies.</p>
+                </div>
+                
+                <!-- AI Integration -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Integration</h3>
+                    <p>Integrate AI chatbots, recommendations, and automation to enhance your digital presence.</p>
+                </div>
+                
+                <!-- SEO Optimization -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Boost your online visibility with comprehensive SEO strategies and best practices.</p>
+                </div>
+                
+                <!-- Maintenance & Support -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Ongoing support, updates, and maintenance to keep your website running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Choose the perfect plan for your business</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">Starter</div>
+                    <h3>Landing Page</h3>
+                    <div class="price">
+                        <span class="currency">₹</span>
+                        <span class="amount">1399</span>
+                        <span class="period">+ Domain</span>
+                    </div>
+                    <p class="price-subtitle">Perfect for small businesses</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 1 Landing Page</li>
+                        <li><i class="fas fa-check"></i> Mobile Friendly</li>
+                        <li><i class="fas fa-check"></i> Basic SEO</li>
+                        <li><i class="fas fa-check"></i> Fast Delivery</li>
+                        <li><i class="fas fa-check"></i> Best for startups</li>
+                    </ul>
+                    <button class="btn btn-secondary">Choose Plan</button>
+                </div>
+                
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">Basic</div>
+                    <h3>1-Page Website</h3>
+                    <div class="price">
+                        <span class="currency">₹</span>
+                        <span class="amount">2599</span>
+                        <span class="period">/one-time</span>
+                    </div>
+                    <p class="price-subtitle">Get online quickly</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 1-page website</li>
+                        <li><i class="fas fa-check"></i> Mobile friendly</li>
+                        <li><i class="fas fa-check"></i> Basic SEO</li>
+                        <li><i class="fas fa-times"></i> Contact form</li>
+                        <li><i class="fas fa-times"></i> Admin panel</li>
+                    </ul>
+                    <button class="btn btn-secondary">Choose Plan</button>
+                </div>
+                
+                <!-- Standard Plan -->
+                <div class="pricing-card popular">
+                    <div class="pricing-badge popular-badge">Most Popular</div>
+                    <h3>3-5 Page Website</h3>
+                    <div class="price">
+                        <span class="currency">₹</span>
+                        <span class="amount">4999</span>
+                        <span class="period">/one-time</span>
+                    </div>
+                    <p class="price-subtitle">Our most recommended</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> 3–5 pages website</li>
+                        <li><i class="fas fa-check"></i> Contact form</li>
+                        <li><i class="fas fa-check"></i> Speed optimized</li>
+                        <li><i class="fas fa-check"></i> SEO setup</li>
+                        <li><i class="fas fa-times"></i> Admin panel</li>
+                    </ul>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-badge">Premium</div>
+                    <h3>Full Website</h3>
+                    <div class="price">
+                        <span class="currency">₹</span>
+                        <span class="amount">5999</span>
+                        <span class="period">/one-time</span>
+                    </div>
+                    <p class="price-subtitle">Complete solution</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Full website (5–10 pages)</li>
+                        <li><i class="fas fa-check"></i> Admin panel</li>
+                        <li><i class="fas fa-check"></i> Advanced SEO</li>
+                        <li><i class="fas fa-check"></i> AI chatbot integration</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <button class="btn btn-secondary">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain & Hosting Section -->
+    <section class="domain" id="domain">
+        <div class="container">
+            <div class="domain-content">
+                <div class="domain-text">
+                    <h2>Domain & Hosting Solutions</h2>
+                    <p>We help you choose the best domain for your business</p>
+                    <div class="domain-features">
+                        <div class="domain-feature">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Domain Registration</h4>
+                                <p>Starting from <strong>₹499–₹999/year</strong></p>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Depends on extension (.com, .in, .co, etc.)</p>
+                            </div>
+                        </div>
+                        <div class="domain-feature">
+                            <i class="fas fa-server"></i>
+                            <div>
+                                <h4>Web Hosting</h4>
+                                <p>Fast, secure, and reliable hosting</p>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Prices vary based on requirements</p>
+                            </div>
+                        </div>
+                        <div class="domain-feature">
+                            <i class="fas fa-hands-helping"></i>
+                            <div>
+                                <h4>Expert Guidance</h4>
+                                <p>Free consultation on domain selection</p>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Get the right domain for your brand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="domain-highlight"><strong>✨ Affordable and Professional Website Solutions</strong></p>
+                </div>
+                <div class="domain-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Dear Coder</h2>
+                    <p>Dear Coder is a leading digital solutions provider dedicated to empowering small businesses and startups with affordable, professional, and fast digital services.</p>
+                    
+                    <div class="mission-statement">
+                        <h3>Our Mission</h3>
+                        <p><strong>Affordable + Professional + Fast Delivery</strong></p>
+                        <p>We believe that every business deserves a strong online presence without breaking the bank. Our mission is to make quality digital solutions accessible to everyone.</p>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h4>1000+</h4>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-illustration">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Clients Say</h2>
+                <p class="section-subtitle">Real feedback from our satisfied clients</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Dear Coder delivered my website within 3 days! The quality is excellent and the price is unbeatable. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div>
+                            <h4>Rajesh Kumar</h4>
+                            <p>E-commerce Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional team, affordable pricing, and excellent customer support. They understood my vision and executed it perfectly."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>Startup Founder</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best decision I made for my business! My website looks amazing and has already brought in new customers. Thank you, Dear Coder!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <h4>Arjun Singh</h4>
+                            <p>Consulting Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Let's discuss your project and bring your ideas to life</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form action="https://formsubmit.co/hello@dearcoder.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="https://dearcoder.com/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919472762864">+91 94727 62864</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:hello@dearcoder.com">hello@dearcoder.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Nonihat, Dumka, Jharkhand, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/919472762864" target="_blank">Chat with us on WhatsApp</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dear Coder</h4>
+                    <p>Affordable digital solutions for your business. Fast, professional, reliable.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#pricing">Pricing</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Web Design</a></li>
+                        <li><a href="#services">App Development</a></li>
+                        <li><a href="#services">AI Integration</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/dearcoder" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dear Coder. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+portfolio.html

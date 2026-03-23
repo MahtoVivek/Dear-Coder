@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /portfolio.html
+
+# Block unnecessary pages (optional)
+Disallow: /thank-you.html
+
+# Sitemap location
+Sitemap: https://dearcoder.in/sitemap.xml

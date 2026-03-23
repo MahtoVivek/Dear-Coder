@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Integration Services - Dear Coder. AI chatbots, recommendations, and automation solutions.">
+    <meta name="keywords" content="AI integration, chatbots, machine learning, automation">
+    <meta name="author" content="Dear Coder">
+    <title>AI Integration Services - Dear Coder</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Image/favicon.png">
+    
+    <style>
+        .service-detail-content { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+        .service-detail-header { text-align: center; margin-bottom: 60px; }
+        .service-detail-header h1 { font-size: 2.8rem; margin-bottom: 15px; }
+        .service-detail-header p { font-size: 1.1rem; color: var(--text-secondary); }
+        .service-section { margin-bottom: 50px; }
+        .service-section h2 { font-size: 2rem; color: var(--success-color); margin-bottom: 20px; border-bottom: 2px solid var(--success-color); padding-bottom: 15px; }
+        .service-section h3 { font-size: 1.5rem; margin: 30px 0 15px 0; color: var(--text-primary); }
+        .service-section p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 15px; }
+        .feature-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .feature-item { background: var(--surface); padding: 20px; border-radius: 10px; border-left: 4px solid var(--success-color); }
+        .feature-item h4 { margin-bottom: 10px; color: var(--text-primary); }
+        .feature-item p { margin: 0; color: var(--text-secondary); font-size: 0.95rem; }
+    </style>
+</head>
+<body>
+    <div class="loader" id="loader"><div class="spinner"></div><p>Loading Dear Coder...</p></div>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo"><i class="fas fa-code"></i> <a href="index.html" style="color: inherit; text-decoration: none;">Dear Coder</a></div>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="service-detail-content">
+        <div class="service-detail-header">
+            <h1>AI Integration Services</h1>
+            <p>Integrate AI chatbots, recommendations, and automation to enhance your digital presence</p>
+        </div>
+
+        <div class="service-section">
+            <h2>What We Offer</h2>
+            <p>AI integration helps automate your business processes, improve customer experiences, and drive better decision-making through intelligent systems.</p>
+            
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h4><i class="fas fa-comments" style="color: var(--success-color); margin-right: 10px;"></i>AI Chatbots</h4>
+                    <p>24/7 customer support automation</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-brain" style="color: var(--success-color); margin-right: 10px;"></i>Machine Learning</h4>
+                    <p>Predictive analytics and insights</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-robot" style="color: var(--success-color); margin-right: 10px;"></i>Automation</h4>
+                    <p>Business process automation</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-headphones" style="color: var(--success-color); margin-right: 10px;"></i>Voice Assistants</h4>
+                    <p>AI-powered voice interactions</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-recommendation" style="color: var(--success-color); margin-right: 10px;"></i>Recommendations</h4>
+                    <p>Personalized user recommendations</p>
+                </div>
+                <div class="feature-item">
+                    <h4><i class="fas fa-chart-bar" style="color: var(--success-color); margin-right: 10px;"></i>Data Analysis</h4>
+                    <p>Advanced data analytics</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2>AI Technologies We Use</h2>
+            <div class="feature-list">
+                <div class="feature-item"><h4>NLP</h4><p>Natural Language Processing</p></div>
+                <div class="feature-item"><h4>Computer Vision</h4><p>Image recognition and analysis</p></div>
+                <div class="feature-item"><h4>Deep Learning</h4><p>Neural networks and AI models</p></div>
+                <div class="feature-item"><h4>Cloud AI</h4><p>Google Cloud AI, AWS, Azure</p></div>
+            </div>
+        </div>
+
+        <div class="service-section">
+            <h2>Benefits of AI Integration</h2>
+            <ul style="color: var(--text-secondary); list-style: none; padding: 0;">
+                <li style="padding: 10px 0; padding-left: 30px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                    Improved customer satisfaction
+                </li>
+                <li style="padding: 10px 0; padding-left: 30px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                    Reduced operational costs
+                </li>
+                <li style="padding: 10px 0; padding-left: 30px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                    24/7 automated support
+                </li>
+                <li style="padding: 10px 0; padding-left: 30px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                    Data-driven insights
+                </li>
+                <li style="padding: 10px 0; padding-left: 30px; position: relative;">
+                    <i class="fas fa-check" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                    Increased revenue
+                </li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px; padding: 40px; background: var(--surface); border-radius: 15px;">
+            <h3 style="margin-bottom: 15px;">Transform with AI</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 25px;">Let's integrate AI into your business</p>
+            <a href="index.html#contact" class="btn btn-primary" style="padding: 15px 40px;">Start AI Integration</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dear Coder</h4>
+                    <p>Affordable digital solutions for your business. Fast, professional, reliable.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/MahtoVivek" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/dearcoder" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dear Coder. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
