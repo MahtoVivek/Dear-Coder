@@ -195,7 +195,7 @@ button:hover, a[role="button"]:hover, input[type="button"]:hover, input[type="su
    Loading Animation
    ======================================== */
 
-.loader {
+/* .loader {
     position: fixed;
     top: 0;
     left: 0;
@@ -209,7 +209,7 @@ button:hover, a[role="button"]:hover, input[type="button"]:hover, input[type="su
     z-index: 9999;
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transition: opacity 0.5s ease, visibility 0.1s ease;
 }
 
 .loader.hidden {
@@ -237,7 +237,7 @@ button:hover, a[role="button"]:hover, input[type="button"]:hover, input[type="su
     to {
         transform: rotate(360deg);
     }
-}
+} */
 
 /* ========================================
    Navigation Bar

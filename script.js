@@ -15,11 +15,11 @@ const contactForm = document.getElementById('contactForm');
 // Loading Animation
 // ========================================
 
-window.addEventListener('load', () => {
-    setTimeout(() => {
-        loader.classList.add('hidden');
-    }, 1500);
-});
+// window.addEventListener('load', () => {
+//     setTimeout(() => {
+//         loader.classList.add('hidden');
+//     }, 1500);
+// });
 
 // ========================================
 // Hamburger Menu Toggle
