@@ -8,7 +8,7 @@ This project is designed to provide **affordable digital solutions** including w
 
 ## 💰 Pricing Highlights
 
-* 🔥 Landing Page: ₹1599 + Domain Price
+* 🔥 Landing Page: ₹1399 + Domain Price
 * 🌐 Domain Cost: ₹499 – ₹999/year
 * 💼 Affordable plans for startups & small businesses
 
