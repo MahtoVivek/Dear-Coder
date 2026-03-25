@@ -133,4 +133,4 @@ Developed by **Dear Coder**
 
 ## 🔥 Special Note
 
-This project is focused on delivering **high-quality websites at affordable prices**, starting from just ₹1599.
+This project is focused on delivering **high-quality websites at affordable prices**, starting from just ₹1399.
