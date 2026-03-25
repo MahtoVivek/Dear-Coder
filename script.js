@@ -520,4 +520,4 @@ if (window.performance && window.performance.timing) {
 
 console.log('%c🚀 Welcome to Dear Coder!', 'font-size: 20px; font-weight: bold; color: #6366f1;');
 console.log('%cAn affordable digital solution for your business.', 'font-size: 14px; color: #ec4899;');
-console.log('%cFor inquiries, contact: hello@dearcoder.com', 'font-size: 12px; color: #94a3b8;');
+console.log('%cFor inquiries, contact: dearcoder.contact@gmail.com', 'font-size: 12px; color: #94a3b8;');
