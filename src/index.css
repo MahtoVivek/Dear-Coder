@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-primary: hsl(var(--primary));
+  --color-accent: hsl(var(--accent));
+  --color-card: hsl(var(--card));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-border: hsl(var(--border));
+
+  --font-sans: "Sporting Grotesque", sans-serif;
+  --font-display: "Sporting Grotesque", sans-serif;
+
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-base: 0.75rem;
+}
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 224 71% 4%;
+    --primary: 263 70% 60%;
+    --accent: 217 91% 60%;
+    --card: 0 0% 100%;
+    --muted-foreground: 215 16% 47%;
+    --border: 217 33% 85%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+    --primary: 263 70% 60%;
+    --accent: 217 91% 60%;
+    --card: 222 47% 6%;
+    --muted-foreground: 215 16% 57%;
+    --border: 217 33% 17%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-primary {
+    background: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+  }
+
+  .glass-card {
+    background-color: hsl(var(--card) / 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+}
