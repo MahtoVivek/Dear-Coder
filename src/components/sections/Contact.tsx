@@ -4,9 +4,11 @@ import { useEffect, useState } from "react";
 
 export default function Contact() {
   const [params, setParams] = useState(new URLSearchParams());
+  const [nextUrl, setNextUrl] = useState("https://dearcoder.in/thank-you");
   
   useEffect(() => {
     setParams(new URLSearchParams(window.location.search));
+    setNextUrl(window.location.origin + "/thank-you");
   }, []);
 
   const prefilledService = params.get("service") || "";
@@ -86,7 +88,7 @@ export default function Contact() {
             <form action="https://formsubmit.co/dearcoder.contact@gmail.com" method="POST" className="relative z-10 space-y-6">
               <input type="hidden" name="_subject" value="New Contact from Dear Coder Website" />
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="https://dearcoder.in/thank-you" />
+              <input type="hidden" name="_next" value={nextUrl} />
               <input type="hidden" name="_template" value="table" />
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
