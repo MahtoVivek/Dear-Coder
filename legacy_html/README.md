@@ -114,7 +114,7 @@ This website is optimized for:
 
 For website services:
 
-* 💬 WhatsApp: +01 9472762864
+* 💬 WhatsApp: +91 9472762864
 * 📧 Email: [your-email@example.com](mailto:your-email@example.com)
 
 ---
