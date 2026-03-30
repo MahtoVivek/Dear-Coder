@@ -28,19 +28,19 @@ const projects = [
     id: 4,
     title: "Corporate Law Firm",
     category: "Business Site",
-    image: "/images/port1.png", // Reusing image for speed
+    image: "/images/portfolio_law.png",
   },
   {
     id: 5,
     title: "SaaS Landing Page",
     category: "Landing Page",
-    image: "/images/port2.png", // Reusing image
+    image: "/images/portfolio_saas.png",
   },
   {
     id: 6,
     title: "Creative Agency",
     category: "Web Design",
-    image: "/images/port3.png", // Reusing image
+    image: "/images/portfolio_agency.png",
   }
 ];
 
