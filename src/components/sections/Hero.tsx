@@ -21,13 +21,15 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.5, type: "spring" }}
-            className="inline-flex flex-col sm:flex-row items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/50 shadow-[0_0_20px_rgba(249,115,22,0.2)] mb-10 overflow-hidden relative group"
+            className="inline-flex items-center justify-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-2xl sm:rounded-full bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/50 shadow-[0_0_20px_rgba(249,115,22,0.2)] mb-10 overflow-hidden relative group max-w-full text-center"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-red-500/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-            <span className="text-2xl animate-bounce pt-1">🔥</span>
-            <span className="text-foreground/90 font-bold tracking-wide text-sm md:text-base z-10">
-              Landing Page Website Only <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 font-black text-lg md:text-xl ml-1">₹1399</span> <span className="text-muted-foreground font-medium block sm:inline mt-1 sm:mt-0 sm:ml-2">+ Domain Price</span>
-            </span>
+            <span className="text-xl sm:text-2xl animate-bounce pt-1 shrink-0">🔥</span>
+            <div className="text-foreground/90 font-bold tracking-wide text-xs sm:text-sm md:text-base z-10 flex flex-wrap items-center justify-center gap-x-1 sm:gap-x-2 gap-y-1">
+              <span>Landing Page Website Only</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500 font-black text-base sm:text-lg md:text-xl">₹1399</span> 
+              <span className="text-muted-foreground font-medium text-[10px] sm:text-xs md:text-sm">+ Domain Price</span>
+            </div>
           </motion.div>
           
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
