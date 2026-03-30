@@ -14,12 +14,12 @@ export default function ThankYou() {
         <div className="w-24 h-24 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-12 h-12" />
         </div>
-        
+
         <h1 className="text-4xl font-bold mb-4">Thank You!</h1>
         <p className="text-muted-foreground text-lg mb-8">
           Your message has been received. We'll respond within 24 hours.
         </p>
-        
+
         <div className="flex flex-col gap-4">
           <a
             href="https://wa.me/919472762864"
@@ -30,7 +30,7 @@ export default function ThankYou() {
             <MessageSquareMore className="w-5 h-5" />
             Chat on WhatsApp
           </a>
-          
+
           <Link
             href="/"
             className="flex items-center justify-center gap-2 px-6 py-4 rounded-xl border-2 border-border hover:border-primary text-foreground font-bold transition-colors"
