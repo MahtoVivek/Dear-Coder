@@ -96,4 +96,4 @@ Upon successful post, the user is forwarded seamlessly directly to `/thank-you`.
 ## 📝 License
 Free to use for personal and commercial projects.
 
-Developed by **Dear Coder Team**
+Developed by **Dear Coder Team **
