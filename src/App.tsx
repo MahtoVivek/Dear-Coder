@@ -4,6 +4,7 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import FloatingActions from "./components/FloatingActions";
 import Preloader from "./components/Preloader";
+import AIChat from "./components/AIChat";
 import BackgroundAnimation from "./components/layout/BackgroundAnimation";
 
 // Pages
@@ -105,6 +106,7 @@ function App() {
         </Switch>
       </main>
       <Footer />
+      <AIChat />
       <FloatingActions />
     </>
   );
