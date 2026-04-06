@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-background pointer-events-none">
+      <div className="absolute inset-0 bg-transparent pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] opacity-50 mix-blend-screen animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[100px] opacity-50 mix-blend-screen" />
       </div>

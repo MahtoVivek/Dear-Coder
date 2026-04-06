@@ -33,7 +33,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-24 bg-background relative overflow-hidden" id="faq">
+    <section className="py-24 bg-transparent relative overflow-hidden" id="faq">
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
       
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
