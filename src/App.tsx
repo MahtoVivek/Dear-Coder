@@ -104,8 +104,8 @@ function App() {
           </Route>
         </Switch>
       </main>
-      <FloatingActions />
       <Footer />
+      <FloatingActions />
     </>
   );
 }

@@ -41,42 +41,42 @@ const BackgroundAnimation = () => {
         animate={{
           x: [0, 150, 0, -150, 0],
           y: [0, -100, 100, -100, 0],
-          scale: [1, 1.3, 1, 0.7, 1],
+          scale: [1, 1.4, 1, 0.8, 1],
         }}
         transition={{
           duration: 15,
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-primary/20 dark:bg-primary/30 rounded-full blur-[100px]"
+        className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/30 dark:bg-primary/40 rounded-full blur-[120px]"
       />
       
       <motion.div
         animate={{
-          x: [0, -180, 180, -180, 0],
-          y: [0, 120, -120, 120, 0],
-          scale: [1, 0.8, 1.2, 0.8, 1],
+          x: [0, -200, 200, -200, 0],
+          y: [0, 150, -150, 150, 0],
+          scale: [1, 0.9, 1.3, 0.9, 1],
         }}
         transition={{
-          duration: 18,
+          duration: 20,
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-accent/20 dark:bg-accent/30 rounded-full blur-[120px]"
+        className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-accent/30 dark:bg-accent/40 rounded-full blur-[140px]"
       />
 
       <motion.div
         animate={{
-          x: [0, 200, -200, 0],
-          y: [0, 50, -50, 0],
-          opacity: [0.1, 0.3, 0.1],
+          x: [0, 250, -250, 0],
+          y: [0, 80, -80, 0],
+          opacity: [0.2, 0.4, 0.2],
         }}
         transition={{
-          duration: 25,
+          duration: 30,
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-pink-500/10 dark:bg-pink-500/20 rounded-full blur-[150px]"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-pink-500/15 dark:bg-pink-500/25 rounded-full blur-[180px]"
       />
 
       {/* Animated Scan Lines & Grid - Combined for efficiency */}

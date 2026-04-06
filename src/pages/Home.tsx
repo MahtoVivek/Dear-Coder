@@ -7,19 +7,46 @@ import Portfolio from "../components/sections/Portfolio";
 import Testimonials from "../components/sections/Testimonials";
 import FAQ from "../components/sections/FAQ";
 import Contact from "../components/sections/Contact";
+import ScrollReveal from "../components/layout/ScrollReveal";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Services />
-      <Pricing />
-      <Domain />
-      <About />
-      <Portfolio />
-      <Testimonials />
-      <FAQ />
-      <Contact />
+      <ScrollReveal direction="down" duration={0.8}>
+        <Hero />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="up" delay={0.1}>
+        <Services />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="up" delay={0.1}>
+        <Pricing />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="right" delay={0.1}>
+        <Domain />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="left" delay={0.1}>
+        <About />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="up" delay={0.1}>
+        <Portfolio />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="up" delay={0.1}>
+        <Testimonials />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="up" delay={0.1}>
+        <FAQ />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="up" delay={0.1}>
+        <Contact />
+      </ScrollReveal>
     </>
   );
 }

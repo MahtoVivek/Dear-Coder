@@ -39,7 +39,7 @@
   }
 
   html, body {
-    background-color: var(--color-background);
+    background-color: transparent;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     scroll-behavior: smooth;
