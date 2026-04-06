@@ -1,5 +1,16 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Laptop, Code, Terminal, Cpu, Globe, Database, Cpu as Zap } from "lucide-react";
+
+const BackgroundIcons = [
+  { Icon: Laptop, x: "10%", y: "20%", size: 40, duration: 25 },
+  { Icon: Code, x: "85%", y: "15%", size: 32, duration: 20 },
+  { Icon: Terminal, x: "70%", y: "60%", size: 36, duration: 30 },
+  { Icon: Globe, x: "15%", y: "75%", size: 44, duration: 28 },
+  { Icon: Database, x: "40%", y: "10%", size: 28, duration: 22 },
+  { Icon: Zap, x: "80%", y: "85%", size: 34, duration: 26 },
+  { Icon: Terminal, x: "50%", y: "40%", size: 30, duration: 24, opacity: 0.05 },
+];
 
 const BackgroundAnimation = () => {
   const [mounted, setMounted] = useState(false);
@@ -68,18 +79,33 @@ const BackgroundAnimation = () => {
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-pink-500/10 dark:bg-pink-500/20 rounded-full blur-[150px]"
       />
 
-      {/* Modern Grid Pattern with Pulse */}
-      <motion.div 
-        animate={{
-          opacity: [0.3, 0.5, 0.3],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute inset-0 bg-[linear-gradient(to_right,#8080801a_1px,transparent_1px),linear-gradient(to_bottom,#8080801a_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_0%,#000_60%,transparent_100%)] dark:bg-[linear-gradient(to_right,#ffffff0f_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0f_1px,transparent_1px)]"
+      {/* Animated Scan Lines & Grid - Combined for efficiency */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.15] dark:opacity-[0.2]" 
+        style={{ backgroundImage: "linear-gradient(to right, #8080801a 1px, transparent 1px), linear-gradient(to bottom, #8080801a 1px, transparent 1px)", backgroundSize: "50px 50px" }} 
       />
+
+      {/* Floating Coding & Tech Icons with Glowing Effect */}
+      {BackgroundIcons.map(({ Icon, x, y, size, duration, opacity = 0.1 }, i) => (
+        <motion.div
+          key={`icon-${i}`}
+          initial={{ x, y, opacity: 0, scale: 0.5 }}
+          animate={{
+            y: [y, `calc(${y} - 20px)`, y],
+            rotate: [0, 10, -10, 0],
+            opacity: [opacity, opacity * 1.5, opacity],
+            scale: [1, 1.1, 1],
+          }}
+          transition={{
+            duration: duration,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="absolute pointer-events-none text-primary/30 dark:text-primary/40 filter drop-shadow-[0_0_8px_rgba(var(--primary),0.5)]"
+          style={{ left: x, top: y }}
+        >
+          <Icon size={size} strokeWidth={1.2} />
+        </motion.div>
+      ))}
 
       {/* Floating Tech Particles - Multi-colored and more numerous */}
       {[...Array(30)].map((_, i) => (
