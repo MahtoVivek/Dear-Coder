@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { ReactNode } from "react";
 
 interface ScrollRevealProps {
@@ -20,7 +20,7 @@ export default function ScrollReveal({
   distance = 50,
   duration = 0.5,
 }: ScrollRevealProps) {
-  const variants = {
+  const variants: Variants = {
     hidden: {
       opacity: 0,
       y: direction === "up" ? distance : direction === "down" ? -distance : 0,
@@ -33,7 +33,7 @@ export default function ScrollReveal({
       transition: {
         duration,
         delay,
-        ease: [0.25, 0.1, 0.25, 1] as any,
+        ease: [0.25, 0.1, 0.25, 1],
       },
     },
   };
