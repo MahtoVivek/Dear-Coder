@@ -20,7 +20,7 @@ export default function ScrollReveal({
   distance = 50,
   duration = 0.5,
 }: ScrollRevealProps) {
-  const variants: Variants = {
+  const variants: any = {
     hidden: {
       opacity: 0,
       y: direction === "up" ? distance : direction === "down" ? -distance : 0,
@@ -41,7 +41,7 @@ export default function ScrollReveal({
   return (
     <div style={{ width, overflow: "visible" }} className={className}>
       <motion.div
-        variants={variants}
+        variants={variants as any}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}

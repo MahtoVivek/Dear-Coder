@@ -1,6 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Minus, X, Bot, User, Loader2, Sparkles } from "lucide-react";
+import { 
+  Send, 
+  Minus, 
+  X, 
+  Bot, 
+  User, 
+  Loader2, 
+  Sparkles 
+} from "lucide-react";
 // Build fix: Updated imports and triggered re-build of AIChat component
 
 interface Message {
