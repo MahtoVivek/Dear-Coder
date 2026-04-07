@@ -1,15 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { 
-  Send, 
-  Minus, 
-  X, 
-  Bot, 
-  User, 
-  Loader2, 
-  Sparkles 
-} from "lucide-react";
-// Build fix: Updated imports and triggered re-build of AIChat component
+import { Send, Minus, X, Bot, User, Loader2, Sparkles } from "lucide-react";
 
 interface Message {
   id: string;
@@ -36,7 +27,7 @@ const KNOWLEDGE_BASE: Record<string, string> = {
   "namaste": "नमस्ते! मैं आपकी कैसे मदद कर सकता हूँ?",
 };
 
-export default function AIChat() {
+export default function AiChatAssistant() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [input, setInput] = useState("");
@@ -73,7 +64,7 @@ export default function AIChat() {
     setTimeout(() => {
       const lowerInput = input.toLowerCase();
       let responseText = "That's a great question! For specific details, our team can help you better. Would you like to reach our experts via WhatsApp?";
-      
+
       for (const [key, val] of Object.entries(KNOWLEDGE_BASE)) {
         if (lowerInput.includes(key)) {
           responseText = val;
@@ -117,9 +108,9 @@ export default function AIChat() {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: 100, scale: 0.8, transformOrigin: "bottom right" }}
-            animate={{ 
-              opacity: 1, 
-              y: 0, 
+            animate={{
+              opacity: 1,
+              y: 0,
               scale: 1,
               height: isMinimized ? "64px" : "500px",
             }}
@@ -141,13 +132,13 @@ export default function AIChat() {
                 </div>
               </div>
               <div className="flex items-center gap-1">
-                <button 
+                <button
                   onClick={() => setIsMinimized(!isMinimized)}
                   className="p-2 hover:bg-muted rounded-full transition-colors"
                 >
                   <Minus className="w-4 h-4" />
                 </button>
-                <button 
+                <button
                   onClick={() => setIsOpen(false)}
                   className="p-2 hover:bg-red-500/10 hover:text-red-500 rounded-full transition-colors"
                 >
@@ -171,11 +162,10 @@ export default function AIChat() {
                         <div className={`w-8 h-8 rounded-full shrink-0 flex items-center justify-center text-[10px] ${m.sender === "user" ? "bg-accent text-white" : "bg-primary/20 text-primary"}`}>
                           {m.sender === "user" ? <User size={16} /> : <Sparkles size={16} />}
                         </div>
-                        <div className={`p-3 rounded-2xl text-sm ${
-                          m.sender === "user" 
-                            ? "bg-primary text-white rounded-tr-none shadow-lg shadow-primary/10" 
+                        <div className={`p-3 rounded-2xl text-sm ${m.sender === "user"
+                            ? "bg-primary text-white rounded-tr-none shadow-lg shadow-primary/10"
                             : "bg-muted/50 backdrop-blur-md border border-border/50 rounded-tl-none"
-                        }`}>
+                          }`}>
                           {m.text}
                           <div className={`text-[10px] mt-1 opacity-50 ${m.sender === "user" ? "text-right" : "text-left"}`}>
                             {m.timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
