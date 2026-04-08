@@ -5,8 +5,6 @@ import Footer from "./components/layout/Footer";
 import FloatingActions from "./components/FloatingActions";
 import Preloader from "./components/Preloader";
 import AiChatAssistant from "./components/AiChatAssistant";
-import BackgroundAnimation from "./components/layout/BackgroundAnimation";
-
 // Pages
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -67,7 +65,6 @@ function App() {
 
   return (
     <>
-      <BackgroundAnimation />
       <Preloader />
       <Navbar />
       <main className="min-h-screen pt-20">
