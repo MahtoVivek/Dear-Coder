@@ -1,5 +1,6 @@
 import Hero from "../components/sections/Hero";
 import Features from "../components/sections/Features";
+import TimelineDemo from "../components/sections/TimelineDemo";
 import Services from "../components/sections/Services";
 import Pricing from "../components/sections/Pricing";
 import Domain from "../components/sections/Domain";
@@ -19,6 +20,16 @@ export default function Home() {
       
       <ScrollReveal direction="up" delay={0.1}>
         <Features />
+      </ScrollReveal>
+
+      <ScrollReveal direction="up" delay={0.1}>
+        <div className="w-full h-screen relative bg-black pt-20 pb-20">
+          <div className="absolute top-10 left-1/2 -translate-x-1/2 z-20 text-center">
+            <h2 className="text-4xl font-bold text-white mb-2">Project Timeline</h2>
+            <p className="text-white/60">An orbital view of our development process</p>
+          </div>
+          <TimelineDemo />
+        </div>
       </ScrollReveal>
       
       <ScrollReveal direction="up" delay={0.1}>
