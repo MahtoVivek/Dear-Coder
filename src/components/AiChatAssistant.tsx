@@ -85,7 +85,7 @@ export default function AiChatAssistant() {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 lg:right-24 z-50 flex flex-col items-end">
+    <div className="fixed bottom-[110px] right-4 md:bottom-28 md:right-6 lg:right-24 z-50 flex flex-col items-end">
       <AnimatePresence>
         {!isOpen && (
           <motion.button

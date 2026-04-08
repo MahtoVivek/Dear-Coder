@@ -26,6 +26,14 @@ import AIIntegration from "./pages/services/AIIntegration";
 import SEOOptimization from "./pages/services/SEOOptimization";
 import MaintenanceSupport from "./pages/services/MaintenanceSupport";
 
+// Feature Pages
+import LightningFast from "./pages/features/LightningFast";
+import SecureByDefault from "./pages/features/SecureByDefault";
+import ModernTechStack from "./pages/features/ModernTechStack";
+import Support247 from "./pages/features/Support247";
+import SeoOptimized from "./pages/features/SeoOptimized";
+import ScalableArchitecture from "./pages/features/ScalableArchitecture";
+
 function App() {
   const [location] = useLocation();
 
@@ -89,6 +97,13 @@ function App() {
           <Route path="/service-ai-integration" component={AIIntegration} />
           <Route path="/service-seo-optimization" component={SEOOptimization} />
           <Route path="/service-maintenance-support" component={MaintenanceSupport} />
+          
+          <Route path="/feature-lightning-fast" component={LightningFast} />
+          <Route path="/feature-secure-by-default" component={SecureByDefault} />
+          <Route path="/feature-modern-tech-stack" component={ModernTechStack} />
+          <Route path="/feature-24-7-support" component={Support247} />
+          <Route path="/feature-seo-optimized" component={SeoOptimized} />
+          <Route path="/feature-scalable-architecture" component={ScalableArchitecture} />
           
           {/* 404 Route */}
           <Route>

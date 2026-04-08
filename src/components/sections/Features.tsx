@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Rocket, ShieldCheck, Code2, Headset, Search, Layers } from "lucide-react";
+import { Link } from "wouter";
 
 const features = [
   {
@@ -7,42 +8,48 @@ const features = [
     description: "Built for speed with modern technologies to ensure instant loading times and smooth user experiences.",
     icon: Rocket,
     color: "from-blue-500/20 to-cyan-500/20",
-    textColor: "text-cyan-500"
+    textColor: "text-cyan-500",
+    path: "/feature-lightning-fast"
   },
   {
     title: "Secure by Default",
     description: "Enterprise-grade security protocols and best practices to keep your data and users safe.",
     icon: ShieldCheck,
     color: "from-emerald-500/20 to-green-500/20",
-    textColor: "text-emerald-500"
+    textColor: "text-emerald-500",
+    path: "/feature-secure-by-default"
   },
   {
     title: "Modern Tech Stack",
     description: "Leveraging the latest frameworks like React and Next.js for scalable, future-proof applications.",
     icon: Code2,
     color: "from-purple-500/20 to-pink-500/20",
-    textColor: "text-purple-500"
+    textColor: "text-purple-500",
+    path: "/feature-modern-tech-stack"
   },
   {
     title: "24/7 Support",
     description: "Dedicated technical support team available around the clock to resolve your issues promptly.",
     icon: Headset,
     color: "from-orange-500/20 to-red-500/20",
-    textColor: "text-orange-500"
+    textColor: "text-orange-500",
+    path: "/feature-24-7-support"
   },
   {
     title: "SEO Optimized",
     description: "Built-in technical SEO optimization helps your website rank higher in search engine results.",
     icon: Search,
     color: "from-yellow-500/20 to-amber-500/20",
-    textColor: "text-yellow-500"
+    textColor: "text-yellow-500",
+    path: "/feature-seo-optimized"
   },
   {
     title: "Scalable Architecture",
     description: "Cloud-native infrastructure designed to grow seamlessly as your business traffic increases.",
     icon: Layers,
     color: "from-indigo-500/20 to-violet-500/20",
-    textColor: "text-indigo-500"
+    textColor: "text-indigo-500",
+    path: "/feature-scalable-architecture"
   }
 ];
 
@@ -91,27 +98,29 @@ export default function Features() {
         >
           {features.map((feature, index) => (
             <motion.div key={index} variants={itemVariants} className="h-full">
-              <div className="group h-full glass-card p-8 rounded-[2rem] transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden bg-card/40 border border-white/10 dark:border-white/5 cursor-pointer">
-                <div className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out`} />
-                
-                <div className="relative z-10 h-full flex flex-col">
-                  <div className={`w-16 h-16 rounded-2xl bg-background/50 flex items-center justify-center mb-8 border border-white/10 shadow-inner group-hover:scale-110 transition-transform duration-300 ease-out backdrop-blur-md`}>
-                    <feature.icon className={`w-8 h-8 ${feature.textColor}`} />
-                  </div>
+              <Link href={feature.path}>
+                <a className="group h-full glass-card inline-block p-8 rounded-[2rem] transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden bg-card/40 border border-white/10 dark:border-white/5 cursor-pointer">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out`} />
                   
-                  <h3 className="text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">
-                    {feature.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground text-[1.05rem] leading-relaxed group-hover:text-white/80 transition-colors duration-300 flex-grow">
-                    {feature.description}
-                  </p>
+                  <div className="relative z-10 h-full flex flex-col">
+                    <div className={`w-16 h-16 rounded-2xl bg-background/50 flex items-center justify-center mb-8 border border-white/10 shadow-inner group-hover:scale-110 transition-transform duration-300 ease-out backdrop-blur-md`}>
+                      <feature.icon className={`w-8 h-8 ${feature.textColor}`} />
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold mb-3 group-hover:text-white transition-colors duration-300">
+                      {feature.title}
+                    </h3>
+                    
+                    <p className="text-muted-foreground text-[1.05rem] leading-relaxed group-hover:text-white/80 transition-colors duration-300 flex-grow">
+                      {feature.description}
+                    </p>
 
-                  <div className="mt-6 flex items-center text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white/90">
-                    Learn more <span className="ml-2">→</span>
+                    <div className="mt-6 flex items-center text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white/90">
+                      Learn more <span className="ml-2">→</span>
+                    </div>
                   </div>
-                </div>
-              </div>
+                </a>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
