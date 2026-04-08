@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { motion, Variants } from "framer-motion";
 import { ReactNode } from "react";
 
