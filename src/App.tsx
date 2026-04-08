@@ -120,7 +120,7 @@ function App() {
         </Switch>
       </main>
       <Footer />
-      <AiChatAssistant />
+      {/* <AiChatAssistant /> */}
       <FloatingActions />
     </>
   );
