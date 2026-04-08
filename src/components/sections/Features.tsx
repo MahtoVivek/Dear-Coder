@@ -91,10 +91,10 @@ export default function Features() {
         >
           {features.map((feature, index) => (
             <motion.div key={index} variants={itemVariants} className="h-full">
-              <div className="group h-full glass-card p-8 rounded-[2rem] transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden bg-card/40 border border-white/10 dark:border-white/5">
+              <div className="group h-full glass-card p-8 rounded-[2rem] transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 relative overflow-hidden bg-card/40 border border-white/10 dark:border-white/5 cursor-pointer">
                 <div className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out`} />
                 
-                <div className="relative z-10">
+                <div className="relative z-10 h-full flex flex-col">
                   <div className={`w-16 h-16 rounded-2xl bg-background/50 flex items-center justify-center mb-8 border border-white/10 shadow-inner group-hover:scale-110 transition-transform duration-300 ease-out backdrop-blur-md`}>
                     <feature.icon className={`w-8 h-8 ${feature.textColor}`} />
                   </div>
@@ -103,9 +103,13 @@ export default function Features() {
                     {feature.title}
                   </h3>
                   
-                  <p className="text-muted-foreground text-[1.05rem] leading-relaxed group-hover:text-white/80 transition-colors duration-300">
+                  <p className="text-muted-foreground text-[1.05rem] leading-relaxed group-hover:text-white/80 transition-colors duration-300 flex-grow">
                     {feature.description}
                   </p>
+
+                  <div className="mt-6 flex items-center text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white/90">
+                    Learn more <span className="ml-2">→</span>
+                  </div>
                 </div>
               </div>
             </motion.div>
