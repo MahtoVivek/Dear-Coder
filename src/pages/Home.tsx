@@ -23,10 +23,10 @@ export default function Home() {
       </ScrollReveal>
 
       <ScrollReveal direction="up" delay={0.1}>
-        <div className="w-full h-screen relative bg-slate-50 dark:bg-black pt-20 pb-20 overflow-hidden">
+        <div className="w-full h-screen relative bg-black pt-20 pb-20 overflow-hidden">
           <div className="absolute top-10 left-1/2 -translate-x-1/2 z-20 text-center w-full px-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-2">Project Timeline</h2>
-            <p className="text-slate-600 dark:text-white/60 text-sm md:text-base">An orbital view of our development process</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">Project Timeline</h2>
+            <p className="text-white/60 text-sm md:text-base">An orbital view of our development process</p>
           </div>
           <TimelineDemo />
         </div>

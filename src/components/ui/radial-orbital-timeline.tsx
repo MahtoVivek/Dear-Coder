@@ -151,19 +151,19 @@ export default function RadialOrbitalTimeline({
   const getStatusStyles = (status: TimelineItem["status"]): string => {
     switch (status) {
       case "completed":
-        return "text-white bg-slate-900 border-slate-900 dark:bg-black dark:border-white";
+        return "text-white bg-black border-white";
       case "in-progress":
-        return "text-slate-900 bg-white border-slate-900 dark:text-black dark:border-white";
+        return "text-black bg-white border-black";
       case "pending":
-        return "text-slate-700 bg-slate-200/50 border-slate-400/50 dark:text-white dark:bg-black/40 dark:border-white/50";
+        return "text-white bg-black/40 border-white/50";
       default:
-        return "text-slate-700 bg-slate-200/50 border-slate-400/50 dark:text-white dark:bg-black/40 dark:border-white/50";
+        return "text-white bg-black/40 border-white/50";
     }
   };
 
   return (
     <div
-      className="w-full h-screen flex flex-col items-center justify-center bg-transparent overflow-hidden"
+      className="w-full h-screen flex flex-col items-center justify-center bg-black overflow-hidden"
       ref={containerRef}
       onClick={handleContainerClick}
     >
@@ -177,16 +177,16 @@ export default function RadialOrbitalTimeline({
           }}
         >
           <div className="absolute w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-purple-500 via-blue-500 to-teal-500 animate-pulse flex items-center justify-center z-10">
-            <div className="absolute w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-slate-400/20 dark:border-white/20 animate-ping opacity-70"></div>
+            <div className="absolute w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-white/20 animate-ping opacity-70"></div>
             <div
-              className="absolute w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-slate-400/10 dark:border-white/10 animate-ping opacity-50"
+              className="absolute w-20 h-20 sm:w-24 sm:h-24 rounded-full border border-white/10 animate-ping opacity-50"
               style={{ animationDelay: "0.5s" }}
             ></div>
             <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-white/80 backdrop-blur-md"></div>
           </div>
 
           <div 
-            className="absolute rounded-full border border-slate-300 dark:border-white/10 transition-all duration-300"
+            className="absolute rounded-full border border-white/10 transition-all duration-300"
             style={{ width: radius * 2, height: radius * 2 }}
           ></div>
 

@@ -85,7 +85,7 @@ export default function AiChatAssistant() {
   };
 
   return (
-    <div className="fixed bottom-6 right-24 z-50">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 lg:right-24 z-50 flex flex-col items-end">
       <AnimatePresence>
         {!isOpen && (
           <motion.button
@@ -115,7 +115,7 @@ export default function AiChatAssistant() {
               height: isMinimized ? "64px" : "500px",
             }}
             exit={{ opacity: 0, y: 100, scale: 0.8 }}
-            className={`w-[350px] md:w-[400px] glass-card rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-primary/20 transition-all duration-300 ${isMinimized ? 'pointer-events-none opacity-50 translate-y-16 scale-90' : ''}`}
+            className={`w-[calc(100vw-2rem)] sm:w-[350px] md:w-[400px] max-h-[calc(100vh-5rem)] glass-card rounded-3xl overflow-hidden shadow-2xl flex flex-col border border-primary/20 transition-all duration-300 origin-bottom-right ${isMinimized ? 'pointer-events-none opacity-50 translate-y-16 scale-90' : ''}`}
           >
             {/* Header */}
             <div className="p-4 bg-gradient-to-r from-primary/10 to-accent/10 border-b border-border/50 flex items-center justify-between pointer-events-auto">
