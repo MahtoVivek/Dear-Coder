@@ -11,7 +11,7 @@ interface Message {
 
 const INITIAL_MESSAGE: Message = {
   id: "1",
-  text: "नमस्ते! I'm your Dear Coder Assistant. How can I help you today? I can tell you about our ₹1399 Landing Pages or our App Development services!",
+  text: "Hello! I'm your Dear Coder Assistant. How can I help you today? I can tell you about our ₹1399 Landing Pages or our App Development services!",
   sender: "ai",
   timestamp: new Date(),
 };
@@ -163,8 +163,8 @@ export default function AiChatAssistant() {
                           {m.sender === "user" ? <User size={16} /> : <Sparkles size={16} />}
                         </div>
                         <div className={`p-3 rounded-2xl text-sm ${m.sender === "user"
-                            ? "bg-primary text-white rounded-tr-none shadow-lg shadow-primary/10"
-                            : "bg-muted/50 backdrop-blur-md border border-border/50 rounded-tl-none"
+                          ? "bg-primary text-white rounded-tr-none shadow-lg shadow-primary/10"
+                          : "bg-muted/50 backdrop-blur-md border border-border/50 rounded-tl-none"
                           }`}>
                           {m.text}
                           <div className={`text-[10px] mt-1 opacity-50 ${m.sender === "user" ? "text-right" : "text-left"}`}>
