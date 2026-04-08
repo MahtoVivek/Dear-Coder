@@ -4,7 +4,7 @@ import Pricing from "../components/sections/Pricing";
 import Domain from "../components/sections/Domain";
 import About from "../components/sections/About";
 import Portfolio from "../components/sections/Portfolio";
-import Testimonials from "../components/sections/Testimonials";
+// import Testimonials from "../components/sections/Testimonials";
 import FAQ from "../components/sections/FAQ";
 import Contact from "../components/sections/Contact";
 import ScrollReveal from "../components/layout/ScrollReveal";
@@ -36,9 +36,9 @@ export default function Home() {
         <Portfolio />
       </ScrollReveal>
       
-      <ScrollReveal direction="up" delay={0.1}>
+      {/* <ScrollReveal direction="up" delay={0.1}>
         <Testimonials />
-      </ScrollReveal>
+      </ScrollReveal> */}
       
       <ScrollReveal direction="up" delay={0.1}>
         <FAQ />
