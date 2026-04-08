@@ -1,4 +1,5 @@
 import Hero from "../components/sections/Hero";
+import Features from "../components/sections/Features";
 import Services from "../components/sections/Services";
 import Pricing from "../components/sections/Pricing";
 import Domain from "../components/sections/Domain";
@@ -14,6 +15,10 @@ export default function Home() {
     <>
       <ScrollReveal direction="down" duration={0.8}>
         <Hero />
+      </ScrollReveal>
+      
+      <ScrollReveal direction="up" delay={0.1}>
+        <Features />
       </ScrollReveal>
       
       <ScrollReveal direction="up" delay={0.1}>
