@@ -34,6 +34,14 @@ import Support247 from "./pages/features/Support247";
 import SeoOptimized from "./pages/features/SeoOptimized";
 import ScalableArchitecture from "./pages/features/ScalableArchitecture";
 
+// Demos
+import FashionEcommerce from "./pages/demos/FashionEcommerce";
+import FitLifeTracker from "./pages/demos/FitLifeTracker";
+import AIAnalytics from "./pages/demos/AIAnalytics";
+import CorporateLaw from "./pages/demos/CorporateLaw";
+import SaaSLanding from "./pages/demos/SaaSLanding";
+import CreativeAgency from "./pages/demos/CreativeAgency";
+
 function App() {
   const [location] = useLocation();
 
@@ -104,6 +112,14 @@ function App() {
           <Route path="/feature-24-7-support" component={Support247} />
           <Route path="/feature-seo-optimized" component={SeoOptimized} />
           <Route path="/feature-scalable-architecture" component={ScalableArchitecture} />
+          
+          {/* Demo Pages */}
+          <Route path="/demo/fashion-ecommerce" component={FashionEcommerce} />
+          <Route path="/demo/fitlife-tracker" component={FitLifeTracker} />
+          <Route path="/demo/ai-analytics" component={AIAnalytics} />
+          <Route path="/demo/corporate-law" component={CorporateLaw} />
+          <Route path="/demo/saas-landing" component={SaaSLanding} />
+          <Route path="/demo/creative-agency" component={CreativeAgency} />
           
           {/* 404 Route */}
           <Route>

@@ -11,36 +11,42 @@ const projects = [
     title: "Fashion E-commerce",
     category: "E-commerce",
     image: "/images/port1.png",
+    demoUrl: "/demo/fashion-ecommerce",
   },
   {
     id: 2,
     title: "FitLife Tracker App",
     category: "Mobile App",
     image: "/images/port2.png",
+    demoUrl: "/demo/fitlife-tracker",
   },
   {
     id: 3,
     title: "AI Analytics Dashboard",
     category: "AI Integration",
     image: "/images/port3.png",
+    demoUrl: "/demo/ai-analytics",
   },
   {
     id: 4,
     title: "Corporate Law Firm",
     category: "Business Site",
     image: "/images/portfolio_law.png",
+    demoUrl: "/demo/corporate-law",
   },
   {
     id: 5,
     title: "SaaS Landing Page",
     category: "Landing Page",
     image: "/images/portfolio_saas.png",
+    demoUrl: "/demo/saas-landing",
   },
   {
     id: 6,
     title: "Creative Agency",
     category: "Web Design",
     image: "/images/portfolio_agency.png",
+    demoUrl: "/demo/creative-agency",
   }
 ];
 
@@ -93,7 +99,7 @@ export default function Portfolio() {
               >
                 <div className="relative aspect-video overflow-hidden bg-muted">
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex flex-col items-center justify-center gap-4">
-                    <Link href={`/contact?service=${project.category}`} className="w-12 h-12 rounded-full bg-primary flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                    <Link href={project.demoUrl} className="w-12 h-12 rounded-full bg-primary flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                       <ExternalLink className="w-6 h-6 text-white" />
                     </Link>
                   </div>
