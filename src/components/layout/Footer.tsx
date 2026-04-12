@@ -10,8 +10,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center">
-              <img src="/logo.png" alt="Dear Coder Logo" className="h-10 w-auto object-contain" />
+            <Link href="/" className="flex items-center gap-2 group">
+              <CodeXml className="w-6 h-6 text-primary transition-transform group-hover:scale-110" />
+              <span className="text-xl font-bold font-heading tracking-tight">
+                Dear Coder
+              </span>
             </Link>
             <p className="text-muted-foreground mt-4">
               Affordable Digital Solutions for Small Businesses & Startups. We build websites, apps, and AI-powered solutions.
