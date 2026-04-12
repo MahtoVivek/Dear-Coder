@@ -40,8 +40,10 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <CodeXml className="w-8 h-8 text-primary transition-transform group-hover:scale-110" />
-            <span className="text-xl font-bold font-heading tracking-tight">
+            <span className="text-2xl font-bold font-mono text-primary group-hover:scale-110 transition-transform duration-300">
+              &lt;/&gt;
+            </span>
+            <span className="text-xl font-bold font-heading tracking-tight text-foreground/90">
               Dear Coder
             </span>
           </Link>

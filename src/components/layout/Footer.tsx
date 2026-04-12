@@ -11,8 +11,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 group">
-              <CodeXml className="w-6 h-6 text-primary transition-transform group-hover:scale-110" />
-              <span className="text-xl font-bold font-heading tracking-tight">
+              <span className="text-xl font-bold font-mono text-primary group-hover:scale-110 transition-transform duration-300">
+                &lt;/&gt;
+              </span>
+              <span className="text-xl font-bold font-heading tracking-tight text-foreground/90">
                 Dear Coder
               </span>
             </Link>
