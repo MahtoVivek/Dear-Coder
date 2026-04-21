@@ -47,6 +47,13 @@ const projects = [
     category: "Web Design",
     image: "/images/portfolio_agency.png",
     demoUrl: "/demo/creative-agency",
+  },
+  {
+    id: 7,
+    title: "Dev Digital Studio",
+    category: "Business Site",
+    image: "/images/portfolio_agency.png",
+    demoUrl: "https://devdigital.dearcoder.in",
   }
 ];
 
@@ -99,9 +106,20 @@ export default function Portfolio() {
               >
                 <div className="relative aspect-video overflow-hidden bg-muted">
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity z-10 flex flex-col items-center justify-center gap-4">
-                    <Link href={project.demoUrl} className="w-12 h-12 rounded-full bg-primary flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                      <ExternalLink className="w-6 h-6 text-white" />
-                    </Link>
+                    {project.demoUrl.startsWith("http") ? (
+                      <a 
+                        href={project.demoUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 rounded-full bg-primary flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-all duration-300"
+                      >
+                        <ExternalLink className="w-6 h-6 text-white" />
+                      </a>
+                    ) : (
+                      <Link href={project.demoUrl} className="w-12 h-12 rounded-full bg-primary flex items-center justify-center translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                        <ExternalLink className="w-6 h-6 text-white" />
+                      </Link>
+                    )}
                   </div>
                   <img 
                     src={project.image} 
