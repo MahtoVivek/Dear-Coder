@@ -48,8 +48,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-1">Call Us</h3>
-                  <a href="tel:+919472762864" className="text-muted-foreground hover:text-primary transition-colors text-lg">
-                    +91 9472762864
+                  <a href="tel:+917004162492" className="text-muted-foreground hover:text-primary transition-colors text-lg">
+                    +91 7004162492
                   </a>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function Contact() {
             </div>
 
             <a
-              href="https://wa.me/919472762864"
+              href="https://wa.me/917004162492"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-[#25D366] text-white font-bold text-lg hover:bg-[#128C7E] transition-colors shadow-lg"
