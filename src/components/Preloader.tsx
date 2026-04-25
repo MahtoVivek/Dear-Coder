@@ -44,7 +44,7 @@ export default function Preloader() {
                 transition={{ duration: 0.8, type: "spring", bounce: 0.5 }}
                 className="relative flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-primary/5 border border-primary/20 backdrop-blur-sm shadow-[0_0_30px_rgba(var(--primary),0.2)] overflow-hidden"
               >
-                <CodeXml className="w-10 h-10 md:w-12 md:h-12 text-primary relative z-10" />
+                <img src="/favicon.png" alt="Dear Coder Logo" className="w-10 h-10 md:w-12 md:h-12 relative z-10" />
                 
                 {/* Scanning line effect inside the box */}
                 <motion.div

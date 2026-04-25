@@ -11,9 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2 group">
-              <span className="text-xl font-bold font-mono text-primary group-hover:scale-110 transition-transform duration-300">
-                &lt;/&gt;
-              </span>
+              <img src="/favicon.png" alt="Dear Coder Logo" className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
               <span className="text-xl font-bold font-heading tracking-tight text-foreground/90">
                 Dear Coder
               </span>

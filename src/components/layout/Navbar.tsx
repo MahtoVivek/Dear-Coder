@@ -40,9 +40,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <span className="text-2xl font-bold font-mono text-primary group-hover:scale-110 transition-transform duration-300">
-              &lt;/&gt;
-            </span>
+            <img src="/favicon.png" alt="Dear Coder Logo" className="w-8 h-8 group-hover:scale-110 transition-transform duration-300" />
             <span className="text-xl font-bold font-heading tracking-tight text-foreground/90">
               Dear Coder
             </span>
