@@ -22,7 +22,7 @@ const KNOWLEDGE_BASE: Record<string, string> = {
   "website": "We build professional, fast, and responsive websites for all types of businesses. Our cheapest plan starts at ₹1399 for a landing page.",
   "app": "We develop high-performance mobile applications for both iOS and Android. Let us know what kind of app you have in mind!",
   "ai": "We specialize in AI Integration and chatbots to automate your business processes and improve efficiency.",
-  "contact": "You can reach us via our contact form on the site, or directly via WhatsApp at +91 9472762864.",
+  "contact": "You can reach us via our contact form on the site, or directly via WhatsApp at +91 7004162492.",
   "hello": "Hello there! How can I assist you with your digital journey today?",
   "namaste": "नमस्ते! मैं आपकी कैसे मदद कर सकता हूँ?",
 };

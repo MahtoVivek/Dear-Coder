@@ -45,7 +45,7 @@ export default function FloatingActions() {
 
       {/* WhatsApp Chat Bubble */}
       <a
-        href="https://wa.me/919472762864"
+        href="https://wa.me/917004162492"
         target="_blank"
         rel="noreferrer"
         className="w-14 h-14 rounded-full bg-green-500 hover:bg-green-600 flex items-center justify-center text-white shadow-lg transition-transform hover:scale-110"

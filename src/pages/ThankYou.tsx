@@ -22,7 +22,7 @@ export default function ThankYou() {
 
         <div className="flex flex-col gap-4">
           <a
-            href="https://wa.me/919472762864"
+            href="https://wa.me/917004162492"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-[#25D366] text-white font-bold hover:bg-[#128C7E] transition-colors"
