@@ -130,10 +130,10 @@ export default function Contact() {
                   <label htmlFor="plan" className="text-sm font-medium">Pricing Plan</label>
                   <select id="plan" name="plan" className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all appearance-none cursor-pointer">
                     <option value="" disabled selected>Select a Plan...</option>
-                    <option value="Starter (₹1,399)">Starter (₹1,399)</option>
-                    <option value="Basic (₹2,399)">Basic (₹2,399)</option>
-                    <option value="Standard (₹5,399)">Standard (₹5,399)</option>
-                    <option value="Premium (₹9,599)">Premium (₹9,599)</option>
+                    <option value="Starter (â‚¹1,399)">Starter (â‚¹1,399)</option>
+                    <option value="Basic (â‚¹2,399)">Basic (â‚¹2,399)</option>
+                    <option value="Standard (â‚¹5,399)">Standard (â‚¹5,399)</option>
+                    <option value="Premium (â‚¹9,599)">Premium (â‚¹9,599)</option>
                     <option value="Custom">Custom Quote</option>
                   </select>
                 </div>
@@ -144,6 +144,18 @@ export default function Contact() {
                 <textarea id="message" name="message" required minLength={10} rows={5} className="w-full bg-background border border-border rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none" placeholder="Tell us about your project..."></textarea>
               </div>
 
+              <button type="submit" className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-primary text-white font-bold text-lg hover:shadow-lg transition-transform hover:scale-[1.02]">
+                <Send className="w-5 h-5" />
+                Send Message
+              </button>
+            </form>
+          </motion.div>
+          
+        </div>
+      </div>
+    </section>
+  );
+}
               <button type="submit" className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-primary text-white font-bold text-lg hover:shadow-lg transition-transform hover:scale-[1.02]">
                 <Send className="w-5 h-5" />
                 Send Message
