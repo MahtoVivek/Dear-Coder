@@ -156,15 +156,3 @@ export default function Contact() {
     </section>
   );
 }
-              <button type="submit" className="w-full flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-gradient-primary text-white font-bold text-lg hover:shadow-lg transition-transform hover:scale-[1.02]">
-                <Send className="w-5 h-5" />
-                Send Message
-              </button>
-            </form>
-          </motion.div>
-          
-        </div>
-      </div>
-    </section>
-  );
-}
